@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  /* font-size: 62.5%; */
+}
+
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+.card {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 35rem; */
+}
+
+.card--title {
+  font-size: 4rem;
+}
+.card--desc {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#tarea-nueva {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0 0 1rem 0;
+  /* border-radius: 5px; */
+}
+
+#enviar {
+  padding: 1rem 4rem;
+  background-color: green;
+  color: #fff;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-tareas {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.lista-tareas div {
+  display: contents; /* para mantener cada tarea dentro de las celdas del grid */
+}
+
+.lista-tareas span,
+.lista-tareas input,
+.lista-tareas button {
+  margin: 0;
+}

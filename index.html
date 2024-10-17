@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <!-- Fuente Inter de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h2 class="card--title">Todo List</h2>
+        <hr />
+        <p class="card--desc">Nueva tarea</p>
+        <div>
+          <input type="text" name="tarea-nueva" id="tarea-nueva" />
+          <input type="submit" name="enviar" id="enviar" value="Agregar" />
+        </div>
+
+        <div class="infoContainer">
+          <div class="tareas-counter">
+            <p id="total-tareas"></p>
+            <p id="finished-tareas"></p>
+          </div>
+
+          <div class="lista-tareas">
+            <p id="id-tarea">ID</p>
+            <p id="desc-tarea">Tareas</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
